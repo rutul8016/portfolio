@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerLogo{
+    height: 30px;
+    width: auto;
+    padding: 2px;
+}
+.desc{
+    font-size: 26px;
+    background: linear-gradient(120deg, #070D59 10.69%, #5893D4 50.19%,#040700 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    margin-top: 10px;
+}
+.navigation{
+    background: #070D59;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 100px;
+}
+.logo{
+    height: 300px;
+    width: auto;
+    border-radius: 150px;
+}
+nav ul li{
+    font-size: 12px;
+    font-weight: 400;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+nav ul li a{
+    color: #ffffff;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #CEDDEF;
+}
+a:hover, .company:hover{
+    color: rgb(169, 182, 255) !important;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #5893D4;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+#lineOne{
+    font-size: 60px;
+    color: #9cb5d4;
+}
+
+.detail{
+    margin-top: 45px;
+    margin-left: 60px;
+}
+.content{
+    display: flex;
+    height: auto;
+    margin: 200px 100px;
+}
+.desc{
+    display: flex;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1F3C88 20.69%, #5893D4 50.19%,#1F3C88 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro{
+    margin: 10px;
+}
+.img{
+    align-self: center;
+    margin: 40px;
+}
+.intro p{
+    color: #155292;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: inherit;
+    /* width: 120%; */
+}
+.intro p span{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    line-height: 80px;
+    color: #070D59;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .content{
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){
+    .content{
+        display: flex;
+        flex-direction: row !important;
+    }
+}
