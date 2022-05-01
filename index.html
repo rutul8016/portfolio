@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<body>
+    <div class="parentOne">
+        <div class="navigation">
+            <nav class="imgContainer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Co-Curricular</a></li>
+                    <li><a href="https://drive.google.com/file/d/1aXvM7ufu-af6ly1PgPNx8KdXH7uZJ8kl/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="img">
+                <img src="https://drive.google.com/uc?export=view&id=1yfg0DhyP98NeLhKDfxa9JyEXgSU44Y-q" class="logo">
+            </div>
+            <div class="detail">
+                <div class="desc">
+                    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+                    <script>
+                        $(function () {
+                            let messages = [],
+                                index = 0;
+
+                            messages.push('Bonjour');
+                            messages.push('Namaste');
+                            messages.push('Hola');
+                            messages.push('Zdravstvuyte');
+                            messages.push('Hello');
+                            messages.push('Namaste');
+                            messages.push('Nǐn hǎo');
+                            messages.push('Salve');
+                            messages.push('Konnichiwa');
+                            messages.push('Namaste');
+                            messages.push('Olá');
+                            messages.push('Hello');
+
+                            function cycle() {
+                                $('#some-id').html(messages[index]);
+                                index++;
+
+                                if (index === messages.length) {
+                                    index = 0;
+                                }
+
+                                setTimeout(cycle, 1000);
+                            }
+
+                            cycle();
+                        });
+                    </script>
+                    <div id="some-id"></div>
+                </div>
+                <div class="intro">
+                    <p id="lineOne">I'm<span>Rutul Patel</span></p>
+                    <span class="title">Full Stack Developer Intern @<a class="company" href="https://woovly.com/">osmosys</a></span>
+                    <p>A passionate creator of unique, elegant, and intuitive websites.</p>
+                    <p>I love making pages come to life.</p>
+                    <p>Read more to find out why you should hire me.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
